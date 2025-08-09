@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "엔트리-주제작 기간",
+  "version": "1.0",
+  "description": "주제작 변경까지 남은 기간을 표기해줍니다",
+  "content_scripts": [
+    {
+      "matches": ["https://playentry.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
